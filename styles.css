@@ -1,0 +1,78 @@
+body {
+    overflow:hidden;
+    -webkit-user-select: none;
+}
+@keyframes playerColor {
+	0% {
+		background-color: red;
+		border: 2px solid silver;
+	}
+	25% {
+		background-color: orange;
+		border: 2px solid black;
+	}
+	50% {
+		background-color: yellow;
+		border: 2px solid silver;
+	}
+	75% {
+		background-color: green;
+		border: 2px solid black;
+	}
+	100% {
+		background-color: blue;
+		border: 2px solid silver;
+	}
+}
+.player {
+	animation: playerColor 5s infinite;
+}
+@keyframes platform {
+	0% {
+		background-color: #A4382B;
+	}
+	25% {
+		background-color: #9A2B20;
+	}
+	50% {
+		background-color: #982920;
+	}
+	75% {
+		background-color: #90564A;
+	}
+	100% {
+		background-color: #973123;
+	}
+}
+.platform {
+	animation: platform 12s infinite;
+}
+#pause {
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-left: 25px solid #f2f2f2;
+	border-bottom: 12.5px solid transparent;
+	margin-top: 8px;
+	margin-left: 12px;
+	position:fixed;
+}
+#surround {
+	width: 40px;
+	height: 40px;
+	background: rgb(44,83,158);
+	background: -moz-linear-gradient(45deg,  rgba(44,83,158,1) 0%, rgba(44,83,158,1) 100%); 
+	background: -webkit-linear-gradient(45deg,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); 
+	background: linear-gradient(45deg,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=1 ); 
+	-webkit-border-radius: 6px;
+	position:fixed;
+	margin-top: 360px;
+	margin-left: 10px;
+}
+#click {
+	width: 40px;
+	height: 40px;
+	border: 1px solid;
+	background-color: red;
+}
